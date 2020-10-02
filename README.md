@@ -3,7 +3,7 @@
 Welcome to my personal website created with React and Node.
 
 ## My Website link
-https://......................
+http://www.fncfranzese.com
 
 
 ## Run Locally
@@ -15,7 +15,8 @@ $ git clone https://github.com/Ffkekko/MyWebSite.git
 ```
 ### 2. open new terminal
 ```
-$ cd MyWebSite
+$ npm install
+$ cd frontend
 $ npm install
 $ npm run dev
 ```

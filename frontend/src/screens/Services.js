@@ -21,7 +21,7 @@ class Services extends React.Component {
                 <div className="service-top" data-aos="zoom-in" data-aos-once="true"> 
 
                     <h1 className="section-title">Ser<span>v</span>ices <span>I</span> of<span>f</span>er</h1>
-                    <p>Making my clients happy isn’t just about building beautiful websites, it is about building a relationship, earning trust and growing together. I provide honest advices and the best possible support for you to reach your goals. </p>
+                    <p>Making my clients happy isn’t just about building beautiful websites, it is about building a relationship, earning trust and growing together. I provide honest advice and the best possible support for you to reach your goals. </p>
                 </div>
 
 

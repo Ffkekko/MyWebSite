@@ -43,7 +43,7 @@ class ContactSection extends React.Component {
 
                     
                     <p className='quote' >Request a <span data-aos="zoom-in-up" data-aos-once="true">free quote </span>
-                        by filling up the form below.
+                        by filling out the form below.
                         In alternative, reach me out with one of the options above or 
                         via Whatsapp at the bottom of the page.
                     </p>
