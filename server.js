@@ -12,11 +12,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 
+
+//Contact form backend
 app.get('/', function (req, res) {
     res.send('Welcome to my form')
 })
   
-
 app.post('/api/form', (req,res)=> {
 
     let data = req.body
@@ -35,7 +36,6 @@ app.post('/api/form', (req,res)=> {
         }
     })
 
-   
 
     let mailOptions= {
         from:data.email, 
@@ -66,7 +66,14 @@ app.post('/api/form', (req,res)=> {
     smtpTransport.close();
 })
 
+//End contact form backend
+
 const PORT = process.env.PORT||3001; /* we set this in react frontend package.json "proxy":"http://localhost:3001", and that's where we are getting the data*/
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('frontend/build'));
+}
+
 app.listen(PORT, ()=>{
     console.log(`server starting at port ${PORT}`)
 })
