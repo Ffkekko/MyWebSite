@@ -309,7 +309,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	transform-origin: right;
-	z-index: 1;
+	z-index: 1000;
 }
 #header .nav-list ul.active {
 	left: 10%;
@@ -361,7 +361,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 100; 
+	z-index: 1001; 
 	cursor: pointer;
 	transform: scale(.8);
 	margin-right: 20px;
