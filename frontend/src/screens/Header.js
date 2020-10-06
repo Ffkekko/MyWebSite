@@ -40,6 +40,7 @@ class Header extends React.Component {
         const headerActive = this.state.navBackground ? 'active' : 'hidden';
 
         return (
+            
             <section id="header">
                 <div className={` header container ${headerActive}`}> 
                 <div className="nav-bar">

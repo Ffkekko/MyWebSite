@@ -92,9 +92,8 @@ class ContactForm extends React.Component {
     
             {/* Contact Form */}
             
-            <div className="contact-form-img">
             <div className="contact-form container">
-            
+                <div className="contact-form-img"></div>
                 <form className="form" onSubmit={this.formSubmit}> {/* remember to add onSubmit and not onclick because we want to send the data only when we click on submit */}
 
                     <h1 className="form__heading">LET'S GROW TOGETHER</h1>
@@ -122,7 +121,7 @@ class ContactForm extends React.Component {
                     <button type="submit" className="cta-form" onClick={this.handleSent}> Submit <img className="icon_send" src="https://img.icons8.com/material-rounded/24/000000/filled-sent.png" alt="sent icon"/></button>
 
                 </form>
-                </div>
+            
             </div>
             {/* End Contact Form */}
 

@@ -12,7 +12,7 @@ function Skills() {
                 <div className="skills-top" data-aos="zoom-in" data-aos-once="true">
 
                     <h1 className="section-title">Ski<span>l</span>ls</h1>
-                    <p>Together with you I make an appealing design that suits your business by using the latest techniques and trends.</p>
+                    <p>Working together throughout the process, I can make an appealing design that suits your business by using the latest techniques and trends.</p>
                 </div>
 
                 <div className="skills-bottom">

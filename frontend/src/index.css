@@ -16,6 +16,7 @@
 	--span-color:#B8020D;
 	--text-color1: black;
 	--text-color2: #fff;
+	--text-color3: #222222;
 	--textHover-color1:#fff;
 
 	--hamburger-color:#fff;
@@ -43,9 +44,11 @@ html {
 	font-family: 'Dosis', sans-serif;
 	scroll-behavior: smooth; 
 }
+
 a {
 	text-decoration: none;
 }
+
 .container {
 	width: 100%;
 	display: flex;
@@ -81,6 +84,10 @@ p {
 
 .section-title span {
 	color: var(--span-color);
+}
+
+#services .service-bottom .span {
+	color: var(--text-color3);
 }
 
 .logo {
@@ -159,7 +166,6 @@ p {
 	background-color: var(--hamburgerMenu-color);
 	width: 100vw; 
 	height: 100vh;
-	
 	top: 0; 
 	display: flex;
 	flex-direction: column;
@@ -212,7 +218,6 @@ p {
 #header .hamburger { 
 	height: 60px;
 	width: 60px;
-	display: inline-block;
 	border: 3px solid white;
 	border-radius: 50%;
 	position: relative;
@@ -224,6 +229,7 @@ p {
 	transform: scale(.8);
 	margin-right: 20px;
 }
+
 #header .hamburger:after {
 	position: absolute;
 	content: '';
@@ -406,6 +412,7 @@ p {
 	margin-top: 50px;
 }
 #services .service-item {
+	position: relative;
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -414,16 +421,27 @@ p {
 	flex-direction: column;
 	padding: 20px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
-	opacity: 0.7;
 	background-size: cover;
 	margin: 10px 5%;
-	position: relative;
 	z-index: 1;
 	overflow: hidden;
 }
+#services .service-itemBG {
+	position: absolute;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	padding: 60px;
+	border-radius: 10px;
+	background-image: url(./img/img-1.png);
+	opacity: 0.7;
+	background-size: cover;
+	z-index: -2;
+	overflow: hidden;
+}
 
-#services .service-item::before {
+#services .service-itemBG::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -458,6 +476,7 @@ p {
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
+	opacity: 0.75;
 }
 #services .service-item h2 {
 	font-size: 2rem;
@@ -815,6 +834,7 @@ p {
 	font-size: 2rem;
 	font-weight: 400;
 	margin-top: 10px;
+	color: var(--span-color)
 }
 #projects .project-info p {
 	color: var(--text-color2);
@@ -974,7 +994,7 @@ p {
 /* contact Section-form img */
 .contact-form-img {
 	padding-top: 20px;
-	position: relative;
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-image: url(./img/3.jpg);
@@ -982,7 +1002,8 @@ p {
 	background-size: cover;
 	object-fit: scale-down;
 	opacity: 0.7 ;
-	clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%); 
+	clip-path: polygon(0 7%, 150% 0, 100% 100%, 0 100%); 
+	
 }
 
 /* End contact Section-form img */
@@ -1021,14 +1042,21 @@ p {
 
 .contact-form {
 	flex-direction: row;
-	max-width: 400px;
+	width: 100%;
 	margin: 30px auto;
+	margin-bottom: 20px;
 	overflow-y: visible;
+	position: relative;
+	padding-bottom: 2.5rem;
 }
 
 .form {
-	width: 100%;
-	padding-bottom: 5rem;
+	width: 400px;
+	padding-bottom: 3.5rem;
+	padding-top: 8rem;
+	z-index: 1;
+	margin-right: 10px;
+	margin-left:10px;
 }
 
 .form__heading {
@@ -1522,7 +1550,7 @@ p {
 	}
 
 	.contact-form-img {
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); 
+		clip-path: polygon(0 10%, 130% 0, 100% 100%, 0 100%); 
 		padding-top: 60px;
 	}
 	
@@ -1547,6 +1575,8 @@ p {
 		height: auto;
 		width: fit-content;
 		background-color: transparent;
+		margin: auto;
+		animation: none;
 	}
 
 	#header .nav-list ul li {
@@ -1559,10 +1589,6 @@ p {
 
 	#header .nav-list ul a:after {
 		display: none;
-	}
-
-	#header .nav-list ul {
-		animation: none;
 	}
 
 	#header .nav-list ul.active {
@@ -1599,7 +1625,7 @@ p {
 	}
 
 	.contact-form-img {
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); 
+		clip-path: polygon(0 10%, 130% 0, 100% 100%, 0 100%); 
 		padding-top: 60px;
 	}
 

@@ -18,6 +18,7 @@ $ git clone https://github.com/Ffkekko/MyWebSite.git
 $ npm install
 $ cd frontend
 $ npm install
+$ cd ..
 $ npm run dev
 ```
 
