@@ -14,7 +14,7 @@ class ContactSection extends React.Component {
                 
                     <div className="contact-items" data-aos="zoom-in">
                         <div className="contact-item" >
-                            <div className="icon" ><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="icon" data-aos="zoom-in" data-aos-delay="2"/></div>
+                            <div className="icon" ><img src={require("../img/iconPhone.png")} alt="icon" data-aos="zoom-in" data-aos-delay="2"/></div>
                             <div className="contact-info" data-aos="zoom-in" data-aos-delay="1">
                                 <h1>Phone</h1>
                                 <h2><a href="tel:+447732856280">+44 7732856280</a></h2>
@@ -23,7 +23,7 @@ class ContactSection extends React.Component {
                         </div>
 
                         <div className="contact-item" >
-                            <div className="icon" ><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="icon" data-aos="zoom-in" data-aos-delay="2"/></div>
+                            <div className="icon" ><img src={require("../img/iconEmail.png")} alt="icon" data-aos="zoom-in" data-aos-delay="2"/></div>
                             <div className="contact-info" data-aos="zoom-in" data-aos-delay="1">
                                 <h1>Email</h1>
                                 <h2><a href="mailto:fnc.franzese1@gmail.com">fnc.franzese1@gmail.com</a></h2>
@@ -32,7 +32,7 @@ class ContactSection extends React.Component {
                         </div>
 
                         <div className="contact-item">
-                            <div className="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="icon" data-aos="zoom-in" data-aos-delay="2"/></div>
+                            <div className="icon"><img src={require("../img/iconAddress.png")} alt="icon" data-aos="zoom-in" data-aos-delay="2"/></div>
                             <div className="contact-info" data-aos="zoom-in" data-aos-delay="1">
                                 <h1>Address</h1>
                                 <h2>Around the World</h2>
