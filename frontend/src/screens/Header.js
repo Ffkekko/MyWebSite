@@ -37,7 +37,7 @@ class Header extends React.Component {
     render() {
         const menuActive = this.state.showMenu ? 'active' : 'close';
         const burgerActive = this.state.showMenu ? 'active' : '';
-        const headerActive = this.state.navBackground ? 'active' : 'hidden';
+        const headerActive = this.state.navBackground ? 'menuShowing' : 'menuHidden';
 
         return (
             

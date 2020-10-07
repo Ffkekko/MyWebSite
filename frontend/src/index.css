@@ -264,7 +264,7 @@ p {
 	height: auto;
 }
 
-/* .active {
+.menuShowing {
 
 	min-height: 8vh;
 	background-color:var(--main-color);
@@ -272,10 +272,10 @@ p {
 	transition: 0.5s ease background-color; 
 }
 
-.hidden {
+.menuHidden {
 	min-height: 8vh;
 	transition:.3s ease background-color; 
-} */
+}
 
 #header .clock1 {
 	padding: 15px;
