@@ -42,7 +42,8 @@ class Header extends React.Component {
         return (
             
             <section id="header">
-                <div className={` header container ${headerActive}`}> 
+                <div className="header container"> 
+                <div className={`${headerActive}`}></div>
                 <div className="nav-bar">
                     
                     <div>
