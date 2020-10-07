@@ -277,6 +277,8 @@ p {
 	background-color:var(--main-color);
 	opacity: 0.98;
 	transition: 0.5s ease background-color; 
+	-webkit-backface-visibility: hidden;
+ 	backface-visibility: hidden;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0, 0, 0);
    	z-index: -1;
@@ -323,8 +325,8 @@ p {
 	justify-content: center;
 	align-items: center;
 	transform-origin: right;
-	-webkit-backface-visibility: hidden;
- 	backface-visibility: hidden;
+	-webkit-backface-visibility: visible;
+ 	backface-visibility: visible;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0, 0, 0);
    	z-index: 1001;
