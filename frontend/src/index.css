@@ -1486,19 +1486,23 @@ p {
 
 @keyframes menuOpened {
 	0% {
-		transform: perspective(200px) rotateY(-90deg);
+		transform: perspective(200px) rotateY(-90deg) translate3d(0, 0, 0);
+		z-index: 1000;
 	}
 	100% {
-		transform: perspective(100px) rotateY(-5deg);
+		transform: perspective(100px) rotateY(-5deg) translate3d(0, 0, 0);
+		z-index: 1000;
 	}
 }
 
 @keyframes menuClosing {
 	0% {
-		transform: perspective(100px) rotateY(-5deg);
+		transform: perspective(100px) rotateY(-5deg) translate3d(0, 0, 0);
+		z-index: 1000;
 	}
 	100% {
-		transform: perspective(200px) rotateY(-90deg);
+		transform: perspective(200px) rotateY(-90deg) translate3d(0, 0, 0);
+		z-index: 1000;
 	}
 }
 
