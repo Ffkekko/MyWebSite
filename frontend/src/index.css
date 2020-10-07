@@ -264,7 +264,7 @@ p {
 	-webkit-backface-visibility: hidden;
  	backface-visibility: hidden;
 	-webkit-transform: translate3d(0,0,0);
-	 transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
    	z-index: 1000;
 }
 
@@ -273,12 +273,12 @@ p {
 	left: 0;
 	top: 0;
 	width: 100vw; 
-	min-height: 8vw;
+	min-height: 22vw;
 	background-color:var(--main-color);
 	opacity: 0.98;
 	transition: 0.5s ease background-color; 
 	-webkit-transform: translate3d(0,0,0);
-	 transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
    	z-index: -1;
 }
 
@@ -287,7 +287,7 @@ p {
 	left: 0;
 	top: 0;
 	width: 100vw;
-	min-height: 8vw;
+	min-height: 22vw;
 	transition:.3s ease background-color; 
 }
 
@@ -323,8 +323,8 @@ p {
 	justify-content: center;
 	align-items: center;
 	transform-origin: right;
-	-webkit-backface-visibility: visible;
- 	backface-visibility: visible;
+	-webkit-backface-visibility: hidden;
+ 	backface-visibility: hidden;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0, 0, 0);
    	z-index: 1001;
@@ -385,7 +385,7 @@ p {
 	cursor: pointer;
 	margin-right: 20px;
 	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0, 0, 0) scale(.8);
+	transform: translate3d(0, 0, 0) scale(.7);
    	z-index: 1002;
 }
 
@@ -1596,6 +1596,19 @@ p {
 		font-size: 4.2rem;
 	}
 
+	#header .hamburger { 
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+
+	.menuShowing { 
+		min-height: 20vw;
+	}
+	
+	.menuHidden {
+		min-height: 20vw; 
+	}
+
 	#header .nav-list ul.active {
 		left: 10%;
 		animation: menuOpened_iPad 0.6s ease forwards;
@@ -1758,6 +1771,14 @@ p {
 
 	#header .hamburger { 
 		display: none;
+	}
+
+	.menuShowing { 
+		min-height: 8vw;
+	}
+	
+	.menuHidden {
+		min-height: 8vw; 
 	}
 
 	#header .nav-list ul {
