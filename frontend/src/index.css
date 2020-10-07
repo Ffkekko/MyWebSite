@@ -269,8 +269,7 @@ p {
 }
 
 .menuShowing {
-
-	min-height: 8vh;
+	/* min-height: 8vh; */
 	background-color:var(--main-color);
 	opacity: 0.98;
 	transition: 0.5s ease background-color; 
@@ -313,11 +312,6 @@ p {
 	justify-content: center;
 	align-items: center;
 	transform-origin: right;
-	/* z-index: 1000; */
-	/* -webkit-backface-visibility: hidden;
- 	backface-visibility: hidden;
- 	-webkit-transform: translate3d(0, 0, 0);
-	 transform: translate3d(0, 0, 0); */
 	-webkit-backface-visibility: visible;
  	backface-visibility: visible;
 	-webkit-transform: translate3d(0,0,0);
@@ -382,10 +376,9 @@ p {
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	transform: scale(.8);
 	margin-right: 20px;
 	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0) scale(.8);
    	z-index: 1002;
 }
 
@@ -1494,37 +1487,69 @@ p {
 
 @keyframes menuOpened {
 	0% {
-		transform: perspective(200px) rotateY(-90deg);
+		-webkit-backface-visibility: visible;
+ 		backface-visibility: visible;
+		-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-90deg);
+		transform: translate3d(0, 0, 0) perspective(200px) rotateY(-90deg);
+   		z-index: 1001;
 	}
 	100% {
-		transform: perspective(100px) rotateY(-5deg);
+		-webkit-backface-visibility: visible;
+ 		backface-visibility: visible;
+		-webkit-transform: translate3d(0,0,0) perspective(100px) rotateY(-5deg);
+		transform: translate3d(0, 0, 0) perspective(100px) rotateY(-5deg);
+   		z-index: 1001;
 	}
 }
 
 @keyframes menuClosing {
 	0% {
-		transform: perspective(100px) rotateY(-5deg);
+		-webkit-backface-visibility: visible;
+		backface-visibility: visible;
+	   	-webkit-transform: translate3d(0,0,0) perspective(100px) rotateY(-5deg);
+	   	transform: translate3d(0, 0, 0) perspective(100px) rotateY(-5deg);
+		z-index: 1001;
 	}
 	100% {
-		transform: perspective(200px) rotateY(-90deg);
+		-webkit-backface-visibility: visible;
+ 		backface-visibility: visible;
+		-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-90deg);
+		transform: translate3d(0, 0, 0) perspective(200px) rotateY(-90deg);
+   		z-index: 1001;
 	}
 }
 
 @keyframes menuOpened_iPad {
 	0% {
-		transform: perspective(200px) rotateY(-90deg);
+		-webkit-backface-visibility: visible;
+ 		backface-visibility: visible;
+		-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-90deg);
+		transform: translate3d(0, 0, 0) perspective(200px) rotateY(-90deg);
+   		z-index: 1001;
 	}
 	100% {
-		transform: perspective(200px) rotateY(-5deg);
+		-webkit-backface-visibility: visible;
+		backface-visibility: visible;
+	   	-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-5deg);
+	   	transform: translate3d(0, 0, 0) perspective(200px) rotateY(-5deg);
+		z-index: 1001;
 	}
 }
 
 @keyframes menuClosing_iPad {
 	0% {
-		transform: perspective(200px) rotateY(-5deg);
+		-webkit-backface-visibility: visible;
+		backface-visibility: visible;
+	   	-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-5deg);
+	   	transform: translate3d(0, 0, 0) perspective(200px) rotateY(-5deg);
+		z-index: 1001;
 	}
 	100% {
-		transform: perspective(200px) rotateY(-90deg);
+		-webkit-backface-visibility: visible;
+ 		backface-visibility: visible;
+		-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-90deg);
+		transform: translate3d(0, 0, 0) perspective(200px) rotateY(-90deg);
+   		z-index: 1001;
 	}
 }
 
