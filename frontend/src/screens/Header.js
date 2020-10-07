@@ -43,7 +43,7 @@ class Header extends React.Component {
             
             <section id="header">
                 <div className="header container"> 
-                <div className={`${headerActive}`}></div>
+            
                 <div className="nav-bar">
                     
                     <div>
@@ -68,6 +68,8 @@ class Header extends React.Component {
                         <li><a href="#contact" data-after="Contact">Contact</a></li>
                     </ul>
                     </div>
+
+                    <div className={`${headerActive}`}></div>
                 </div>
                 </div>
             </section>
