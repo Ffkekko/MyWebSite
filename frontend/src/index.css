@@ -1,4 +1,4 @@
- /* •	Get text fonts from google : https://fonts.google.com/ then we use it below in font-family*/
+/* •	Get text fonts from google : https://fonts.google.com/ then we use it below in font-family*/
 
 /* FONT */
 /* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap'); avoid import*/
@@ -257,39 +257,26 @@ p {
 /* Header section */
 #header {
 	position: fixed;
+	z-index: 1000;
 	left: 0;
 	top: 0;
 	width: 100vw; 
 	height: auto;
-	-webkit-backface-visibility: hidden;
- 	backface-visibility: hidden;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0, 0, 0);
-   	z-index: 1000;
 }
 
 .menuShowing {
 	position: fixed;
+	z-index: -1;
 	left: 0;
 	top: 0;
+	min-height: 10vh;
 	width: 100vw; 
-	min-height: 22vw;
 	background-color:var(--main-color);
 	opacity: 0.98;
 	transition: 0.5s ease background-color; 
-	-webkit-backface-visibility: hidden;
- 	backface-visibility: hidden;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0, 0, 0);
-   	z-index: -1;
 }
 
 .menuHidden {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	min-height: 22vw;
 	transition:.3s ease background-color; 
 }
 
@@ -315,7 +302,7 @@ p {
 }
 #header .nav-list ul {
 	list-style: none;
-	position: fixed; /* absolute */
+	position: absolute;
 	background-color: var(--hamburgerMenu-color);
 	width: 100vw; 
 	height: 100vh;
@@ -325,18 +312,11 @@ p {
 	justify-content: center;
 	align-items: center;
 	transform-origin: right;
-	-webkit-backface-visibility: hidden;
- 	backface-visibility: hidden;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0, 0, 0);
-   	z-index: 1001;
+	z-index: 1;
 }
 #header .nav-list ul.active {
 	left: 10%;
-	width: 100vw; 
-	height: 100vh;
 	animation: menuOpened 0.6s ease forwards;
-
 }
 
 #header .nav-list ul.close {
@@ -384,11 +364,11 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 100; 
 	cursor: pointer;
+	transform: scale(.6);
 	margin-right: 20px;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0, 0, 0) scale(.7);
-   	z-index: 1002;
+	margin-bottom:5px;
 }
 
 #header .hamburger:after {
@@ -405,7 +385,7 @@ p {
 	width: 30px;
 	position: relative;
 	background-color: var(--hamburger-color);
-	z-index: 2;
+	z-index: -1;
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before { 
@@ -1496,69 +1476,37 @@ p {
 
 @keyframes menuOpened {
 	0% {
-		-webkit-backface-visibility: visible;
- 		backface-visibility: visible;
-		-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-90deg);
-		transform: translate3d(0, 0, 0) perspective(200px) rotateY(-90deg);
-   		z-index: 1001;
+		transform: perspective(200px) rotateY(-90deg);
 	}
 	100% {
-		-webkit-backface-visibility: visible;
- 		backface-visibility: visible;
-		-webkit-transform: translate3d(0,0,0) perspective(100px) rotateY(-5deg);
-		transform: translate3d(0, 0, 0) perspective(100px) rotateY(-5deg);
-   		z-index: 1001;
+		transform: perspective(100px) rotateY(-5deg);
 	}
 }
 
 @keyframes menuClosing {
 	0% {
-		-webkit-backface-visibility: visible;
-		backface-visibility: visible;
-	   	-webkit-transform: translate3d(0,0,0) perspective(100px) rotateY(-5deg);
-	   	transform: translate3d(0, 0, 0) perspective(100px) rotateY(-5deg);
-		z-index: 1001;
+		transform: perspective(100px) rotateY(-5deg);
 	}
 	100% {
-		-webkit-backface-visibility: visible;
- 		backface-visibility: visible;
-		-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-90deg);
-		transform: translate3d(0, 0, 0) perspective(200px) rotateY(-90deg);
-   		z-index: 1001;
+		transform: perspective(200px) rotateY(-90deg);
 	}
 }
 
 @keyframes menuOpened_iPad {
 	0% {
-		-webkit-backface-visibility: visible;
- 		backface-visibility: visible;
-		-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-90deg);
-		transform: translate3d(0, 0, 0) perspective(200px) rotateY(-90deg);
-   		z-index: 1001;
+		transform: perspective(200px) rotateY(-90deg);
 	}
 	100% {
-		-webkit-backface-visibility: visible;
-		backface-visibility: visible;
-	   	-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-5deg);
-	   	transform: translate3d(0, 0, 0) perspective(200px) rotateY(-5deg);
-		z-index: 1001;
+		transform: perspective(200px) rotateY(-5deg);
 	}
 }
 
 @keyframes menuClosing_iPad {
 	0% {
-		-webkit-backface-visibility: visible;
-		backface-visibility: visible;
-	   	-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-5deg);
-	   	transform: translate3d(0, 0, 0) perspective(200px) rotateY(-5deg);
-		z-index: 1001;
+		transform: perspective(200px) rotateY(-5deg);
 	}
 	100% {
-		-webkit-backface-visibility: visible;
- 		backface-visibility: visible;
-		-webkit-transform: translate3d(0,0,0) perspective(200px) rotateY(-90deg);
-		transform: translate3d(0, 0, 0) perspective(200px) rotateY(-90deg);
-   		z-index: 1001;
+		transform: perspective(200px) rotateY(-90deg);
 	}
 }
 
@@ -1588,6 +1536,19 @@ p {
 		min-width: 20vh;
 	}
 
+	.menuShowing {
+		min-height: 14vh;
+	}
+	
+	.menuHidden {
+		transition:.3s ease background-color; 
+	}
+	#header .hamburger { 
+		transform: scale(1);
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
 	#header .clock {
 		margin-top: 4px;
 		font-size: 16px;
@@ -1596,19 +1557,6 @@ p {
 
 	#header .nav-list ul a {
 		font-size: 4.2rem;
-	}
-
-	#header .hamburger { 
-		-webkit-transform: translate3d(0,0,0);
-		transform: translate3d(0, 0, 0) scale(1);
-	}
-
-	.menuShowing { 
-		min-height: 20vw;
-	}
-	
-	.menuHidden {
-		min-height: 20vw; 
 	}
 
 	#header .nav-list ul.active {
@@ -1773,14 +1721,6 @@ p {
 
 	#header .hamburger { 
 		display: none;
-	}
-
-	.menuShowing { 
-		min-height: 8vw;
-	}
-	
-	.menuHidden {
-		min-height: 8vw; 
 	}
 
 	#header .nav-list ul {
