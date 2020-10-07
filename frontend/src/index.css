@@ -313,7 +313,10 @@ p {
 	/* -webkit-backface-visibility: hidden;
  	backface-visibility: hidden;
  	-webkit-transform: translate3d(0, 0, 0);
- 	transform: translate3d(0, 0, 0); */
+	 transform: translate3d(0, 0, 0); */
+	 -webkit-transform: translate3d(0,0,0);
+	 transform: translate3d(0, 0, 0);
+   	z-index: 999;
 }
 #header .nav-list ul.active {
 	left: 10%;
