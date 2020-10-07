@@ -316,8 +316,8 @@ p {
  	backface-visibility: hidden;
  	-webkit-transform: translate3d(0, 0, 0);
 	 transform: translate3d(0, 0, 0); */
-	-webkit-backface-visibility: hidden;
- 	backface-visibility: hidden;
+	-webkit-backface-visibility: visible;
+ 	backface-visibility: visible;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0, 0, 0);
    	z-index: 1001;
