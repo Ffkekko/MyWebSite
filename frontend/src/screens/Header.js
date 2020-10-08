@@ -40,7 +40,8 @@ class Header extends React.Component {
         const headerActive = this.state.navBackground ? 'menuShowing' : 'menuHidden';
 
         return (
-            
+            <div>
+            <div className={`${headerActive}`}></div>
             <section id="header">
                 <div className="header container"> 
                 
@@ -59,7 +60,7 @@ class Header extends React.Component {
                         <div className="bar">
                         </div>
                     </div>
-                    <div className={`${headerActive}`}></div>
+                    
                     <ul className={`header nav-bar nav-list ${menuActive}`} onClick={this.toggleMenu}> 
                         <li><a href="#hero" data-after="Home">Home</a></li>
                         <li><a href="#services" data-after="Service">Services</a></li>
@@ -74,6 +75,7 @@ class Header extends React.Component {
               
                 </div>
             </section>
+            </div>
         )
     }
 }
