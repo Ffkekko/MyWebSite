@@ -57,7 +57,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpg")} alt={"img"}/>
+                        <img src={require("../img/macScreen.jpeg")} alt={"img"}/>
                     </div>
                     
                 </div>
@@ -71,7 +71,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpg")} alt={"img"}/>
+                        <img src={require("../img/macScreen.jpeg")} alt={"img"}/>
                     </div>
                     
                 </div>
@@ -85,7 +85,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpg")} alt={"img"}/>
+                        <img src={require("../img/macScreen.jpeg")} alt={"img"}/>
                     </div>
                     
                 </div>
