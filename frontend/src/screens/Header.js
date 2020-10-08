@@ -59,6 +59,7 @@ class Header extends React.Component {
                         <div className="bar">
                         </div>
                     </div>
+                    <div className={`${headerActive}`}></div>
                     <ul className={`header nav-bar nav-list ${menuActive}`} onClick={this.toggleMenu}> 
                         <li><a href="#hero" data-after="Home">Home</a></li>
                         <li><a href="#services" data-after="Service">Services</a></li>
@@ -67,7 +68,7 @@ class Header extends React.Component {
                         <li><a href="#about" data-after="About">About</a></li>
                         <li><a href="#contact" data-after="Contact">Contact</a></li>
                     </ul>
-                    <div className={`${headerActive}`}></div>
+                    
                     </div>
                 </div>
               
