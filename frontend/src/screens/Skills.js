@@ -6,7 +6,6 @@ function Skills() {
     return (
 
         <section id="skills">
-        <div className="skillBG-img">
             <div className="skills container">
 
                 <div className="skills-top" data-aos="zoom-in" data-aos-once="true">
@@ -42,8 +41,7 @@ function Skills() {
                         <div className="mongodb-text">mongodb</div>
                     </div>
                 </div>
-            </div>    
-        </div>       
+            </div>          
         </section>
 
     );

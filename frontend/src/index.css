@@ -648,7 +648,50 @@ p {
 
 /* End Services Section */
 
-/* Skill img */
+
+/* skills Section */
+
+#skills .skills { 
+	position: relative;
+	clip-path: polygon(0 3.5%, 100% 0%, 100% 96.5%, 0 100%);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 150px 25px;
+	padding-bottom: 100px;
+	z-index: 1;
+}
+
+/* working with safari too: */
+#skills .skills:before {
+	content: ' ';
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: url(./img/coding.jpg) no-repeat left top;
+	background-size: cover;
+	clip-path: polygon(0 3.5%, 100% 0%, 100% 96.3%, 0 100%);
+	z-index: -100;
+}
+
+#skills .skills:after {
+	content: ' ';
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: var(--fourth-color);
+	clip-path: polygon(0 3.5%, 100% 0%, 100% 96.5%, 0 100%);
+	z-index: -1;
+}
+
+/* not working with safari:
 .skillBG-img {
 	position: relative;
 	height: 100%;
@@ -660,25 +703,8 @@ p {
 	-webkit-background-size: cover;
 	background-size: cover;
 	clip-path: polygon(0 3.5%, 100% 0%, 100% 96.5%, 0 100%);
-	
-}
+} */
 
-/* End Skill-img */
-
-/* skills Section */
-
-#skills .skills { 
-	background-color: var(--fourth-color);
-	clip-path: polygon(0 3.5%, 100% 0%, 100% 96.5%, 0 100%);
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	text-align: center;
-	width: 100%;
-	margin: 0 auto;
-	padding: 150px 25px;
-	padding-bottom: 100px;
-}
 
 #skills .skills-top .section-title{
 	margin-bottom: 30px;
@@ -1206,6 +1232,7 @@ p {
 	position: relative;
 	padding-bottom: 2.5rem;
 }
+
 
 .form {
 	width: 400px;
