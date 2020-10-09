@@ -274,16 +274,16 @@ p {
 	opacity: 0.98;
 	transform: translate3d(0, 0, 0);
 	z-index: 1000;
-	transition: 0.5s ease background-color; 
+	transition: all .5s ease; 
 }
 
 .menuHidden {
 	position: fixed;
 	left: 0;
-	top: 0;
+	top: -10%;
 	min-height: 10vh;
 	width: 100vw; 
-	transition: 0.5s ease background-color; 
+	transition: all .5s ease; 
 	transform: translate3d(0, 0, 0);
 	z-index: 1000;
 }
@@ -494,8 +494,6 @@ p {
 	color: transparent; 
 	animation: text_reveal .5s ease forwards;
 	animation-delay: 1s;
-	
-
 }
 
 
@@ -1438,7 +1436,7 @@ p {
 @keyframes text_reveal_name {
 	100% {
 		color: var(--text-color1);
-		font-weight: 500;
+	/* 	font-weight: 600; */
 	}
 }
 
@@ -1584,12 +1582,12 @@ p {
 
 	.menuShowing {
 		min-height: 14vh;
-		transition:0.3s ease background-color; 
+		transition:all .5s ease; 
 	}
 	
 	.menuHidden {
 		min-height: 14vh;
-		transition:0.5s ease background-color; 
+		transition:all .5s ease; 
 	}
 	#header .hamburger { 
 		transform: scale(1);
