@@ -28,7 +28,7 @@ class Services extends React.Component {
                 <div className="service-bottom">
 
                     {/* first card */}
-                    <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> 
+                    <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true"> 
                     <div className="service-itemBG"></div>
                     <div className="icon"><img src={iconsCart} alt="icon"/></div> 
                     <h2 className="span">E-Commerce</h2>
@@ -36,7 +36,7 @@ class Services extends React.Component {
                     </div>
 
                     {/* second card */} 
-                    <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
                     <div className="service-itemBG"></div>
                     <div className="icon"><img src={iconstools} alt="icon"/></div>
                     <h2 className="span">MAINTENANCE & SUPPORT</h2>
@@ -44,7 +44,7 @@ class Services extends React.Component {
                     </div>
 
                     {/* third card */}
-                    <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
                     <div className="service-itemBG"></div>
                     <div className="icon"><img src={iconsPaint} alt="icon"/></div>
                     <h2 className="span">Web Design</h2>
@@ -52,7 +52,7 @@ class Services extends React.Component {
                     </div>
 
                     {/* fourth card */} 
-                    <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
                     <div className="service-itemBG"></div>
                     <div className="icon"><img src={iconsresponsive} alt="icon"/></div>
                     <h2 className="span">Responsive Design</h2>
@@ -60,7 +60,7 @@ class Services extends React.Component {
                     </div>
 
                       {/* fifth card */}
-                    <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> 
+                    <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true"> 
                     <div className="service-itemBG"></div>
                     <div className="icon"><img src={iconsdevelopment} alt="icon"/></div> 
                     <h2 className="span">Web Development</h2>
@@ -68,7 +68,7 @@ class Services extends React.Component {
                     </div>
 
                     {/* sixth card */} 
-                    <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
                     <div className="service-itemBG"></div>
                     <div className="icon"><img src={iconsrefresh} alt="icon"/></div>
                     <h2 className="span">Refurbishment</h2>
