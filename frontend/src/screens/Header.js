@@ -6,7 +6,7 @@ class Header extends React.Component {
     constructor() {
         super();
         this.state = { 
-            showMenu: false,
+            showMenu: "",
             navBackground: false
         }
     }

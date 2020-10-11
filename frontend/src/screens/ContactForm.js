@@ -118,7 +118,7 @@ class ContactForm extends React.Component {
 
                     <div className={this.state.sent ? 'msgAppear' : 'msg'} >MESSAGE SENT! <div>THANKS, I WILL GET BACK TO YOU AS SOON AS POSSIBLE.</div></div>
                     
-                    <button type="submit" className="cta-form" onClick={this.handleSent}> Submit <img className="icon_send" src="https://img.icons8.com/material-rounded/24/000000/filled-sent.png" alt="sent icon"/></button>
+                    <button type="submit" className="cta-form" onClick={this.handleSent}> Submit <img className="icon_send" src="https://img.icons8.com/material-rounded/24/000000/filled-sent.png" alt="Sent-icon to get in touch with Francesco web developer"/></button>
 
                 </form>
             

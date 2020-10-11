@@ -30,7 +30,7 @@ class Services extends React.Component {
                     {/* first card */}
                     <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true"> 
                     <div className="service-itemBG"></div>
-                    <div className="icon"><img src={iconsCart} alt="icon"/></div> 
+                    <div className="icon"><img src={iconsCart} alt="icon of cart representing e-commerce website"/></div> 
                     <h2 className="span">E-Commerce</h2>
                     <p>I create e-commerce websites for online sales: the best solution to bring your store online. <br></br> Let's get your business online!</p>
                     </div>
@@ -38,7 +38,7 @@ class Services extends React.Component {
                     {/* second card */} 
                     <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
                     <div className="service-itemBG"></div>
-                    <div className="icon"><img src={iconstools} alt="icon"/></div>
+                    <div className="icon"><img src={iconstools} alt="icon of tools for web site maintenance services"/></div>
                     <h2 className="span">MAINTENANCE & SUPPORT</h2>
                     <p>I provide ongoing support and maintenance services to ensure that your website always runs smoothly.</p>
                     </div>
@@ -46,7 +46,7 @@ class Services extends React.Component {
                     {/* third card */}
                     <div className="service-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
                     <div className="service-itemBG"></div>
-                    <div className="icon"><img src={iconsPaint} alt="icon"/></div>
+                    <div className="icon"><img src={iconsPaint} alt="paint brush representing web design service"/></div>
                     <h2 className="span">Web Design</h2>
                     <p>I offer websites from the first idea to the successful launch. Together, with you, I make an appealing design that suits your business.</p>
                     </div>
@@ -54,7 +54,7 @@ class Services extends React.Component {
                     {/* fourth card */} 
                     <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
                     <div className="service-itemBG"></div>
-                    <div className="icon"><img src={iconsresponsive} alt="icon"/></div>
+                    <div className="icon"><img src={iconsresponsive} alt="icon of screens for responsive design"/></div>
                     <h2 className="span">Responsive Design</h2>
                     <p>I can develop a responsive website design for you with an enhanced experience for visitors who use mobile devices & smartphones, not just Desktop PCs.</p>
                     </div>
@@ -62,15 +62,15 @@ class Services extends React.Component {
                       {/* fifth card */}
                     <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true"> 
                     <div className="service-itemBG"></div>
-                    <div className="icon"><img src={iconsdevelopment} alt="icon"/></div> 
+                    <div className="icon"><img src={iconsdevelopment} alt="icon of screen with html tag for web development"/></div> 
                     <h2 className="span">Web Development</h2>
-                    <p>Send your design mock-ups and I will                                  convert them to a fully functional and responsive website for a unique user experience. </p>
+                    <p>Send your design mock-ups and I will                                                 convert them to a fully functional and responsive website for a unique user experience. </p>
                     </div>
 
                     {/* sixth card */} 
                     <div className="service-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="true">
                     <div className="service-itemBG"></div>
-                    <div className="icon"><img src={iconsrefresh} alt="icon"/></div>
+                    <div className="icon"><img src={iconsrefresh} alt="icon refresh to indicate website improvment service"/></div>
                     <h2 className="span">Refurbishment</h2>
                     <p>Does your website need improvement? Get in touch to turn it into a modern, user-friendly and responsive website that will convert more visitors into customers.</p>
                     </div>

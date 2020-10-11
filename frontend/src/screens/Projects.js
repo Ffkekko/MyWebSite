@@ -29,7 +29,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreenProject1.jpg")} alt={"img"}/>
+                        <img src={require("../img/macScreenProject1.jpg")} alt={"mac screen with homepage of e-commerce website built by Francesco web developer"}/>
                     </div>
                     
                 </div>
@@ -43,7 +43,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreenProject2.jpg")} alt={"img"}/>
+                        <img src={require("../img/macScreenProject2.jpg")} alt={"mac screen with homepage of web design built by Francesco web developer"}/>
                     </div>
                     
                 </div>
@@ -57,7 +57,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpeg")} alt={"img"}/>
+                        <img src={require("../img/macScreen.jpeg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
                     </div>
                     
                 </div>
@@ -71,7 +71,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpeg")} alt={"img"}/>
+                        <img src={require("../img/macScreen.jpeg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
                     </div>
                     
                 </div>
@@ -85,7 +85,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpeg")} alt={"img"}/>
+                        <img src={require("../img/macScreen.jpeg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
                     </div>
                     
                 </div>

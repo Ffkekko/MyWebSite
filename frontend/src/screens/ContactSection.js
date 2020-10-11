@@ -14,7 +14,7 @@ class ContactSection extends React.Component {
                 
                     <div className="contact-items" data-aos="zoom-in" data-aos-once="true">
                         <div className="contact-item" >
-                            <div className="icon" ><img src={require("../img/iconPhone.png")} alt="icon" data-aos="zoom-in" data-aos-delay="2" data-aos-once="true" data-aos-offset="15"/></div>
+                            <div className="icon" ><img src={require("../img/iconPhone.png")} alt="icon phone call Francesco for a free quote" data-aos="zoom-in" data-aos-delay="2" data-aos-once="true" data-aos-offset="15"/></div>
                             <div className="contact-info" data-aos="zoom-in" data-aos-delay="1" data-aos-once="true" data-aos-offset="15">
                                 <h1>Phone</h1>
                                 <h2><a href="tel:+447732856280">+44 7732856280</a></h2>
@@ -23,7 +23,7 @@ class ContactSection extends React.Component {
                         </div>
 
                         <div className="contact-item" data-aos-once="true" >
-                            <div className="icon" ><img src={require("../img/iconEmail.png")} alt="icon" data-aos="zoom-in" data-aos-delay="2" data-aos-once="true" data-aos-offset="15"/></div>
+                            <div className="icon" ><img src={require("../img/iconEmail.png")} alt="icon email to get in touch with Francesco web developer" data-aos="zoom-in" data-aos-delay="2" data-aos-once="true" data-aos-offset="15"/></div>
                             <div className="contact-info" data-aos="zoom-in" data-aos-delay="1" data-aos-once="true" data-aos-offset="15">
                                 <h1>Email</h1>
                                 <h2><a href="mailto:fnc.franzese1@gmail.com">fnc.franzese1@gmail.com</a></h2>
@@ -32,7 +32,7 @@ class ContactSection extends React.Component {
                         </div>
 
                         <div className="contact-item" data-aos-once="true">
-                            <div className="icon"><img src={require("../img/iconAddress.png")} alt="icon" data-aos="zoom-in" data-aos-delay="0" data-aos-once="true" data-aos-offset="15"/></div>
+                            <div className="icon"><img src={require("../img/iconAddress.png")} alt="icon of address: Francesco working in Italy, England, Bulgaria and around the world" data-aos="zoom-in" data-aos-delay="0" data-aos-once="true" data-aos-offset="15"/></div>
                             <div className="contact-info" data-aos="zoom-in" data-aos-delay="0" data-aos-once="true" data-aos-offset="15">
                                 <h1>Address</h1>
                                 <h2>Around the World</h2>

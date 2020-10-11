@@ -10,7 +10,7 @@ function About() {
             <div className="about container">
 
             <div className="col-left" data-aos="fade-right">
-                <div className="about-img">
+                <div className="about-img"> {/* add image here with alt */}
                 </div>
             </div>
 
