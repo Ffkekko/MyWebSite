@@ -43,7 +43,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreenProject2.webp")} alt={"mac screen with homepage of web design built by Francesco web developer"}/>
+                        <img src={require("../img/macScreenProject2.jpg")} alt={"mac screen with homepage of web design built by Francesco web developer"}/>
                     </div>
                     
                 </div>
