@@ -4,6 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+const compression = require('compression');
 
 
 const normalizePort = val => { 
@@ -23,6 +24,9 @@ const normalizePort = val => {
 require('dotenv').config(); 
 
 const app = express();
+
+app.use(compression());
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
