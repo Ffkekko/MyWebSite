@@ -445,7 +445,7 @@ p {
 
 #hero {
 	min-height: 90vh;
-	background-image: url(./img/9.jpg);
+	background-image: url(./img/9.webp);
 	background-size: cover;
 	background-position: 25% 90%;
 	position: relative; 
@@ -670,7 +670,7 @@ p {
 	width: 100%;
 	top: 0;
 	left: 0;
-	background: url(./img/coding.jpg) no-repeat left top;
+	background: url(./img/coding.webp) no-repeat left top;
 	background-size: cover;
 	clip-path: polygon(0 3.5%, 100% 0%, 100% 96.3%, 0 100%);
 	z-index: -100;
@@ -1096,7 +1096,7 @@ p {
 	letter-spacing: 0.15rem;
 }
 #about .col-left .about-img {
-	background-image: url(./img/linkedin.png);
+	background-image: url(./img/linkedin.webp);
 	height: 100%;
 	width: 100%; 
 	position: relative;
