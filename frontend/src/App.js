@@ -11,7 +11,7 @@ import Footer from './screens/Footer';
 import ContactSection from './screens/ContactSection';
 import ContactForm from './screens/ContactForm';
 import Skills from './screens/Skills';
-
+import {Helmet} from "react-helmet";
 
 
 function App() {
@@ -23,7 +23,22 @@ function App() {
   }); /*  this script is for the animation on scroll*/
   
   return (
+    
     <div>
+
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Freelance Full Stack Web Developer - Francesco Franzese</title>
+          <meta
+            name="description"
+            content="Honest, friendly and professional web developer who understands your non-technical language and transforms 
+            it into beautiful and fast websites with the best SEO and responsive design whether it means to build your e-Commerce or 
+            small business’ Website."
+          />
+          <meta name="robots" content="index, follow"></meta>
+      </Helmet>
+    
+
       <Header />
       <Hero />
       <Services />
