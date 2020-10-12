@@ -25,7 +25,7 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(compression());
+app.use(compression()); /* this is good for speed time, suggested by SEO  */
 
 
 app.use(bodyParser.json());

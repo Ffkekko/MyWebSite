@@ -1,17 +1,25 @@
-import React from 'react';
+import React,  {Suspense, lazy} from 'react'; /* suspense and lazy are for lazy loading */
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Header from './screens/Header';
 import Hero from './screens/Hero';
-import Services from './screens/Services';
+/* import Services from './screens/Services';
 import Projects from './screens/Projects';
 import About from './screens/About';
 import Footer from './screens/Footer';
 import ContactSection from './screens/ContactSection';
 import ContactForm from './screens/ContactForm';
-import Skills from './screens/Skills';
+import Skills from './screens/Skills'; */
 import {Helmet} from "react-helmet";
+
+const Services = lazy (() => import ('./screens/Services'));
+const Projects = lazy (() => import ('./screens/Projects'));
+const About = lazy (() => import ('./screens/About'));
+const Footer = lazy (() => import ('./screens/Footer'));
+const ContactSection = lazy (() => import ('./screens/ContactSection'));
+const ContactForm = lazy (() => import ('./screens/ContactForm'));
+const Skills = lazy (() => import ('./screens/Skills'));
 
 
 function App() {
@@ -41,13 +49,28 @@ function App() {
 
       <Header />
       <Hero />
-      <Services />
-      <Skills />
-      <Projects />
-      <About />
-      <ContactSection />
-      <ContactForm />
-      <Footer />
+      <Suspense fallback = {<div> Loading </div>}>
+        <Services />
+      </ Suspense>
+      <Suspense fallback = {<div> Loading </div>}>
+        <Skills />
+      </ Suspense>
+      <Suspense fallback = {<div> Loading </div>}>
+        <Projects />
+      </ Suspense>
+      <Suspense fallback = {<div> Loading </div>}>
+        <About />
+      </ Suspense>
+      <Suspense fallback = {<div> Loading </div>}>
+        <ContactSection />
+      </ Suspense>
+      <Suspense fallback = {<div> Loading </div>}>
+        <ContactForm />
+      </ Suspense>
+      
+      <Suspense fallback = {<div> Loading </div>}>
+        <Footer />
+      </ Suspense>
 
     </div>
   );
