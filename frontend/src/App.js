@@ -49,26 +49,26 @@ function App() {
 
       <Header />
       <Hero />
-      <Suspense fallback = {<div> Loading </div>}>
+      <Suspense fallback = {<div> Loading... </div>}>
         <Services />
       </ Suspense>
-      <Suspense fallback = {<div> Loading </div>}>
+      <Suspense fallback = {<div> Loading... </div>}>
         <Skills />
       </ Suspense>
-      <Suspense fallback = {<div> Loading </div>}>
+      <Suspense fallback = {<div> Loading... </div>}>
         <Projects />
       </ Suspense>
-      <Suspense fallback = {<div> Loading </div>}>
+      <Suspense fallback = {<div> Loading... </div>}>
         <About />
       </ Suspense>
-      <Suspense fallback = {<div> Loading </div>}>
+      <Suspense fallback = {<div> Loading... </div>}>
         <ContactSection />
       </ Suspense>
-      <Suspense fallback = {<div> Loading </div>}>
+      <Suspense fallback = {<div> Loading... </div>}>
         <ContactForm />
       </ Suspense>
       
-      <Suspense fallback = {<div> Loading </div>}>
+      <Suspense fallback = {<div> Loading... </div>}>
         <Footer />
       </ Suspense>
 
