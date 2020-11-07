@@ -40,6 +40,7 @@ if (process.env.NODE_ENV === 'production') { /* remember to update this in herok
     app.use(express.static('frontend/build')); /* you can also try express.static(path.resolve(__dirname, 'build')) */
 }
 
+/* sending the frontend to the server so that it displays once online. Make sure that this goes before app.get to connect backend */
 app.use(express.static(path.resolve(__dirname, 'frontend/build')));
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'frontend/build/', 'index.html'));
