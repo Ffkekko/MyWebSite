@@ -14,7 +14,7 @@ class Hero extends React.Component {
                     <h1>Hello, <span></span></h1>
                     <h1>My Name is <span></span></h1>
                     <h1>Francesco <span></span></h1>
-                    <a href="#contact" /* type="button" */ className="cta_hero">REQUEST A QUOTE </a>
+                    <a href="/#contact" type="button" className="cta_hero">REQUEST A QUOTE </a>
                 </div>
                 </div>
             </section>
