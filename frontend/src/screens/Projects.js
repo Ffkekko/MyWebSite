@@ -24,12 +24,12 @@ function Projects() {
                 <div className="project-item" data-aos="fade-right">
                     <div className="project-info" >
                         <h1>Project 1</h1>
-                        <h2>Under development</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa. distinctio illum quae mollitia ut. </p>
+                        <h2>ShopHere</h2>
+                        <p>Fully functional multivendor e-commerce. Classic user, seller and admin accounts available. You can see the sellers, products, orders, statistics and more within your dashboard. It allows you to fully control the vendors and products. Google Maps, Live Chat and PayPal APIs included.</p>
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreenProject1.jpg")} alt={"mac screen with homepage of e-commerce website built by Francesco web developer"}/>
+                        <img src={require("../img/macScreenProject_ShopHere_2.jpg")} alt={"mac screen with homepage of e-commerce website built by Francesco web developer"}/>
                     </div>
                     
                 </div>
@@ -57,7 +57,7 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpeg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
+                        <img src={require("../img/macScreenProject1.jpg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
                     </div>
                     
                 </div>

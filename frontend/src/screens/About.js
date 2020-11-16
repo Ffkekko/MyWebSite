@@ -18,7 +18,7 @@ function About() {
                 <h1 className="section-title">About <span>me</span></h1>
                 <h2 className="section-h2">Full Stack Web Developer WORKING WORLDWIDE</h2>
                 <p>My name is Francesco Franzese. I am passionate about designing and developing user-friendly websites. I have the right skills to both develop a new high quality website or improve existing ones for individuals and organisations. I focus on modern and responsive website solutions by using the latest techniques and trends. Are you looking for a high quality website for your organisation or company at a competitive price?</p>
-                <a href="/#contact" className="cta_about">Get in touch</a> 
+                <a href="#contact" className="cta_about">Get in touch</a> 
             </div>
 
 

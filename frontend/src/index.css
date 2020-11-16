@@ -315,6 +315,7 @@ p {
 	width: 100vw; 
 	height: 100vh;
 	top: 0; 
+	right:100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -328,10 +329,10 @@ p {
 	animation: menuOpened 0.6s ease forwards;
 }
 
-#header .nav-list ul.close {
+/* #header .nav-list ul.close {
 	left: 10%;
 	animation: menuClosing 0.8s ease forwards;
-}
+} */
 
 #header .nav-list ul a {
 	font-size: 2rem;
@@ -665,7 +666,7 @@ p {
 /* working with safari too: */
 #skills .skills:before {
 	content: ' ';
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	top: 0;
@@ -1525,7 +1526,7 @@ p {
 	}
 }
 
-@keyframes menuClosing {
+/* @keyframes menuClosing {
 	0% {
 		transform: perspective(100px) rotateY(-5deg) translate3d(0, 0, 0);
 		z-index: 1000;
@@ -1534,7 +1535,7 @@ p {
 		transform: perspective(200px) rotateY(-90deg) translate3d(0, 0, 0);
 		z-index: 1000;
 	}
-}
+} */
 
 @keyframes menuOpened_iPad {
 	0% {
@@ -1545,14 +1546,14 @@ p {
 	}
 }
 
-@keyframes menuClosing_iPad {
+/* @keyframes menuClosing_iPad {
 	0% {
 		transform: perspective(200px) rotateY(-5deg);
 	}
 	100% {
 		transform: perspective(200px) rotateY(-90deg);
 	}
-}
+} */
 
 /* End Keyframes */
 
