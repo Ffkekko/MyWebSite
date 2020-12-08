@@ -444,7 +444,7 @@ p {
 	opacity: 0.9;
 }
 
-#hero {
+.no-webp #hero {
 	min-height: 90vh;
 	background-image: url(./img/9.jpg);
 	background-size: cover;
@@ -454,7 +454,15 @@ p {
  	clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
 }
 
-
+.webp #hero {
+	min-height: 90vh;
+	background-image: url(./img/9.webp);
+	background-size: cover;
+	background-position: 25% 90%;
+	position: relative; 
+	z-index: 1;
+ 	clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+}
 #hero canvas { 
 	display: inline-block;
 	position: absolute;
