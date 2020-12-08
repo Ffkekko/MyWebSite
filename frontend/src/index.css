@@ -672,7 +672,7 @@ p {
 }
 
 /* working with safari too: */
-#skills .skills:before {
+.no-webp #skills .skills:before {
 	content: ' ';
 	position: absolute;
 	height: 100%;
@@ -680,6 +680,19 @@ p {
 	top: 0;
 	left: 0;
 	background: url(./img/coding.jpg) no-repeat left top;
+	background-size: cover;
+	clip-path: polygon(0 3.5%, 100% 0%, 100% 96.3%, 0 100%);
+	z-index: -100;
+}
+
+.webp #skills .skills:before {
+	content: ' ';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: url(./img/coding.webp) no-repeat left top;
 	background-size: cover;
 	clip-path: polygon(0 3.5%, 100% 0%, 100% 96.3%, 0 100%);
 	z-index: -100;
@@ -1113,6 +1126,7 @@ p {
 	border: 10px solid white;
 }
 
+
 #about .col-left .about-img::after {
 	content: '';
 	position: absolute;
@@ -1178,7 +1192,7 @@ p {
 
 
 /* contact Section-form img */
-.contact-form-img {
+.no-webp .contact-form-img {
 	padding-top: 20px;
 	position: absolute;
 	height: 100%;
@@ -1195,6 +1209,22 @@ p {
 	
 }
 
+.webp .contact-form-img {
+	padding-top: 20px;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(./img/3.webp);
+	background-attachment: fixed;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	object-fit: scale-down;
+	opacity: 0.7 ;
+	clip-path: polygon(0 7%, 150% 0, 100% 100%, 0 100%); 
+	
+}
 /* End contact Section-form img */
 
 /* Contact form */
