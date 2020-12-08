@@ -48,7 +48,7 @@ class Header extends React.Component {
                 <div className="nav-bar">
                     
                     <div>
-                        <a href="#hero" className="logo"> </a>
+                        <a href="#hero" className="logo">.</a>
                     </div>
 
                     <div className="clock1">
