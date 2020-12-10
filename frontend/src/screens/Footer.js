@@ -26,7 +26,7 @@ import React from 'react';
                     </div>
                 </div>
                 <p>Copyright © 2020 Francesco Franzese. All rights reserved</p>
-                <a href="https://icons8.com">Icons by Icons8</a>
+                <a href="https://icons8.com" rel="noopener noreferrer">Icons by Icons8</a>
             </div>
         </section>
         /* End Footer */

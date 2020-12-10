@@ -98,12 +98,12 @@ class ContactForm extends React.Component {
 
                     <h1 className="form__heading">LET'S GROW TOGETHER</h1>
                     <div className="form__field">
-                        <label htmlFor="contact-name" />
-                        <input type="text" name="contact-name" id="contact-name" autoComplete="name" placeholder="Your name" value={this.state.name} onChange ={this.handleName} required></input>
+                        
+                        <input aria-label="contact-name" type="text" name="contact-name" id="contact-name" autoComplete="name" placeholder="Your name" value={this.state.name} onChange ={this.handleName} required></input>
                     </div>
                     <div className='form__field'>
-                        <label htmlFor="contact-email" />
-                        <input type="email" name="contact-email" id="contact-email" autoComplete="email" placeholder="Your email"  value={this.state.email} onChange={this.handleEmail} required></input>
+                        {/* <label htmlFor="contact-email" /> */}
+                        <input aria-label="contact-email" type="email" name="contact-email" id="contact-email" autoComplete="email" placeholder="Your email"  value={this.state.email} onChange={this.handleEmail} required></input>
                     </div>
                     <div className="form__field">
                         <label htmlFor="contact-message" />
