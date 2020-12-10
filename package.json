@@ -13,7 +13,7 @@
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
   "author": "Francesco",
-  "homepage": "http://localhost:3000",
+  "homepage": "https://fncfranzese.com",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
