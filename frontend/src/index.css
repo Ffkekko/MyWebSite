@@ -584,7 +584,7 @@ p {
 	z-index: 1;
 	overflow: hidden;
 }
-#services .service-itemBG {
+.no-webp #services .service-itemBG {
 	position: absolute;
 	justify-content: center;
 	height: 100%;
@@ -593,6 +593,21 @@ p {
 	padding: 60px;
 	border-radius: 10px;
 	background-image: url(./img/img-1.png);
+	opacity: 0.7;
+	background-size: cover;
+	z-index: -2;
+	overflow: hidden;
+}
+
+.webp #services .service-itemBG {
+	position: absolute;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	padding: 60px;
+	border-radius: 10px;
+	background-image: url(./img/img-1.webp);
 	opacity: 0.7;
 	background-size: cover;
 	z-index: -2;

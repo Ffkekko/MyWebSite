@@ -30,6 +30,7 @@ function Projects() {
                     {/* IMAGE */}
                     <div className="project-img">
                         <img src={require("../img/macScreenProject_ShopHere_2.jpg")} alt={"mac screen with homepage of e-commerce website built by Francesco web developer"}/>
+
                     </div>
                     
                 </div>
@@ -43,7 +44,12 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreenProject2.jpg")} alt={"mac screen with homepage of web design built by Francesco web developer"}/>
+                        <picture>
+                            <source srcset={require("../img/macScreenProject2.webp")} type="image/webp" />
+                            <source srcset={require("../img/macScreenProject2.jpg")} type="image/jpg" />
+                            <img src={require("../img/macScreenProject2.jpg")} alt={"mac screen with homepage of web design built by Francesco web developer"}/>
+                        </picture>
+
                     </div>
                     
                 </div>
@@ -57,7 +63,11 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreenProject1.jpg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
+                        <picture>
+                            <source srcset={require("../img/macScreenProject1.webp")} type="image/webp" />
+                            <source srcset={require("../img/macScreenProject1.jpg")} type="image/jpg" />
+                            <img src={require("../img/macScreenProject1.jpg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
+                        </picture>
                     </div>
                     
                 </div>
@@ -71,7 +81,11 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpeg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
+                        <picture>
+                            <source srcset={require("../img/macScreen.webp")} type="image/webp" />
+                            <source srcset={require("../img/macScreen.jpeg")} type="image/jpeg" />
+                            <img src={require("../img/macScreen.jpeg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
+                        </picture>
                     </div>
                     
                 </div>
@@ -85,7 +99,11 @@ function Projects() {
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
-                        <img src={require("../img/macScreen.jpeg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
+                        <picture>
+                            <source srcset={require("../img/macScreen.webp")} type="image/webp" />
+                            <source srcset={require("../img/macScreen.jpeg")} type="image/jpeg" />
+                            <img src={require("../img/macScreen.jpeg")} alt={"mac screen with homepage of web project built by Francesco web developer"}/>
+                        </picture>
                     </div>
                     
                 </div>
