@@ -25,7 +25,7 @@ require('dotenv').config();
 
 const app = express();
 
-// added to redirect to https after talking to
+// added to redirect to https after talking to hostinger. ACTUALLY I AM USING HTTPSREDIRECT FROM NPM TO DO SO BECAUSE NOTHINGELESE WORKED
 const redirectionFilter = function (req, res, next) {
     const theDate = new Date();
     const receivedUrl = `${req.protocol}:\/\/${req.hostname}:${port}${req.url}`;
