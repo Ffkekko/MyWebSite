@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import React from 'react';
 
 
@@ -5,6 +6,18 @@ import React from 'react';
 
 function Projects() {
 
+    let directToAzale = () => {
+  window.location.href= "http://www.azaleflowerbar.com";
+  window.target="_blank";
+  window.rel="noopener noreferrer"
+}
+
+  let directToBehave = () => {
+  window.location.href= 'http://www.behavefromlondon.it/';
+  window.target="_blank";
+  window.rel="noopener noreferrer"
+}
+  
   
   return (
    
@@ -21,26 +34,12 @@ function Projects() {
 
               
                 {/* FIRST PROJECT */}
-                <div className="project-item" data-aos="fade-right">
+                <div   onClick={directToAzale} className="project-item" data-aos="fade-left">
+
                     <div className="project-info" >
                         <h1>Project 1</h1>
-                        <h2>ShopHere</h2>
-                        <p>Fully functional multivendor e-commerce. Classic user, seller and admin accounts available. You can see the sellers, products, orders, statistics and more within your dashboard. It allows you to fully control the vendors and products. Google Maps, Live Chat and PayPal APIs included.</p>
-                    </div>
-                    {/* IMAGE */}
-                    <div className="project-img">
-                        <img src={require("../img/macScreenProject_ShopHere_2.jpg")} alt={"mac screen with homepage of e-commerce website built by Francesco web developer"}/>
-
-                    </div>
-                    
-                </div>
-
-                {/* SECOND PROJECT */}
-                <div className="project-item" data-aos="fade-left">
-                    <div className="project-info" >
-                        <h1>Project 2</h1>
-                        <h2>Under development</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa. distinctio illum quae mollitia ut. </p>
+                        <h2>Bar / Resturant</h2>
+                        <p>Elegant and quick website for a beautiful and famous bar/restaurant. Booking system plus admin page for dynamically updating the menu are included. </p>
                     </div>
                     {/* IMAGE */}
                     <div className="project-img">
@@ -49,6 +48,24 @@ function Projects() {
                             <source srcset={require("../img/macScreenProject2.jpg")} type="image/jpg" />
                             <img src={require("../img/macScreenProject2.jpg")} alt={"mac screen with homepage of web design built by Francesco web developer"}/>
                         </picture>
+
+                    </div>
+                
+                    
+                </div>
+
+                {/* SECOND PROJECT */}
+                
+                <div onClick={directToBehave} className="project-item" data-aos="fade-right">
+                    <div className="project-info" >
+                        <h1>Project 2</h1>
+                        <h2>eCommerce</h2>
+                        <p>Fully functional multivendor e-commerce. Classic user, seller and admin accounts available. You can see the sellers, products, orders, statistics and more within your dashboard. It allows you to fully control the vendors and products. Google Maps, Live Chat and PayPal APIs included.</p>
+                    </div>
+                    
+                    {/* IMAGE */}
+                    <div className="project-img">
+                        <img src={require("../img/macScreenProject_ShopHere_2.jpg")} alt={"mac screen with homepage of e-commerce website built by Francesco web developer"}/>
 
                     </div>
                     
