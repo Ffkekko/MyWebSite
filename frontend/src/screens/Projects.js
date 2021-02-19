@@ -44,9 +44,9 @@ function Projects() {
                     {/* IMAGE */}
                     <div className="project-img">
                         <picture>
-                            <source srcset={require("../img/macScreenProject2.webp")} type="image/webp" />
-                            <source srcset={require("../img/macScreenProject2.jpg")} type="image/jpg" />
-                            <img src={require("../img/macScreenProject2.jpg")} alt={"mac screen with homepage of web design built by Francesco web developer"}/>
+                           {/*  <source srcset={require("../img/macScreenProjectAzale.webp")} type="image/webp" /> */}
+                            <source srcset={require("../img/macScreenProjectAzale.jpg")} type="image/jpg" />
+                            <img src={require("../img/macScreenProjectAzale.jpg")} alt={"mac screen with homepage of web design built by Francesco web developer"}/>
                         </picture>
 
                     </div>
